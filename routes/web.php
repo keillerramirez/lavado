@@ -20,25 +20,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::resource('clientes', 'ClientesController');
 
-Route::resource('roles', 'RolesController');
+Route::resource('vehiculos', 'VehiculosController');
 
-Route::resource('usuariosRols', 'UsuariosRolController');
+Route::resource('tipoLavados', 'Tipo_lavadosController');
 
-Route::resource('usuarios', 'UsuariosController');
+Route::resource('tipoLavados', 'Tipo_lavadosController');
 
-Route::resource('estados', 'EstadosController');
-
-Route::resource('tipoConceptos', 'TipoConceptosController');
-
-Route::resource('conceptos', 'ConceptosController');
-
-Route::resource('permisos', 'PermisosController');
-
-Route::resource('valoresConceptos', 'ValoresConceptoController');
-
-Route::resource('tipoIdentificacions', 'TipoIdentificacionController');
-
-Route::resource('personas', 'PersonasController');
-
-Route::resource('combos', 'CombosController');
+Route::resource('tipoVehiculos', 'Tipo_VehiculosController');
